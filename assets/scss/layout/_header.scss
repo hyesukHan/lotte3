@@ -1,0 +1,223 @@
+.header{
+    position: sticky;
+    z-index: 20;
+    top: -6rem;
+    left: 0;
+    letter-spacing: 0;
+    background-color: #fff;
+    .inner{
+        padding: 0 1.7rem;
+        .header-top{
+            height: 6rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.7rem;
+            .logo a{
+                display: block;
+                width: 10.5rem;
+                height: 2.7rem;
+                background: url(../images/logo-header.png) no-repeat center center /contain;
+                
+            }
+            .menu-wrap {
+                .btn-menu{
+                    width: 3.4rem;
+                    height: 3.4rem;
+                    border-radius: 0.7rem;
+                    background-color: #DCDFE4;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .icon{
+                        display: block;
+                        width: 1.7rem;
+                        height: 1.7rem;
+                        background: url(../images/icon/ico-draw.png)no-repeat center center /contain;
+                    }
+                }
+                .menu-area{
+                    position: fixed;
+                    top: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    overflow-x: hidden;
+                    overflow-y: auto;
+                    z-index: 70;
+                    background-color: #fff;
+                    transform: translateX(100%);
+                    transition: 0.5s;
+                    .home-area{
+                        height: 6.8rem;
+                        padding: 0 2.4rem;
+                        display: flex;
+                        align-items: center;
+                        .link-home{
+                            display: block;
+                            width: 1.9rem;
+                            height: 1.9rem;
+                            background: url(../images/icon/ico-home.png)no-repeat
+                             center center /contain;
+                        }  
+                    }
+                    .btn-close{
+                        position: absolute;
+                        right: 2.8rem;
+                        width: 1.6rem;
+                        height: 1.6rem;
+                        top: 2.7rem;
+                        background: url(../images/icon/ico-pannelclose.png)no-repeat center center /contain;
+                    } 
+                    .login-area{
+                        background-color: #EFF2F7;
+                        height: 4.1rem;
+                        padding: 0 1.7rem;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        color: #2B2B2B;
+                        font-size: 1.2rem;
+                        .link-login{
+                            padding: 0 1.3rem;
+                            border-radius: 1.5rem;
+                            font-size: 1.1rem;
+                            color: #fff;
+                            border-color: #2B2B2B;
+                            background-color: #2B2B2B;
+                            height: 2.8rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                    .menu-list .title-area{
+                        padding: 0 1.7rem;
+                        margin: 2.3rem 0 1.2rem;
+                        display: flex;
+                        align-items: center;
+                        .title{
+                            font-size: 1.4rem;
+                            margin-left: 0.7rem;
+                            font-weight: bold;
+                            
+                        }
+                        .icon{
+                            display: block;
+                            width: 2.8rem;
+                            height: 2.8rem;
+                            border-radius: 50%;
+                        }
+                        .icon.mycar{
+                            background: #CFF7EB url(../images/icon/ico-pannel01.png) no-repeat center center /contain;
+                            background-size: 45% auto;
+                        }
+                        .icon.estimate{
+                            background: #E8E2FF url(../images/icon/ico-pannel02.png) no-repeat center center /contain;
+                            background-size: 45% auto;
+                        }
+                        .icon.light{
+                            background: #E5F8D4 url(../images/icon/ico-pannel03.png) no-repeat center center /contain;
+                            background-size: 45% auto;
+                        }
+                        .icon.gift{
+                            background: #FFE8E2 url(../images/icon/ico-pannel04.png) no-repeat center center /contain;
+                            background-size: 45% auto;
+                        }
+                        .icon.customer{
+                            background: #E8E2FF url(../images/icon/ico-pannel05.png) no-repeat center center /contain;
+                            background-size: 45% auto;
+                        }
+                        .icon.community{
+                            background: #FFE8E2 url(../images/icon/ico-pannel06.png) no-repeat center center /contain;
+                            background-size: 45% auto;
+                        } 
+                    }
+                    .menu-list-2dept{
+                        position: relative;
+                        letter-spacing: -1px;
+                        color: #2B2B2B;
+                        font-size: 1.2rem;
+                        line-height: 1;
+                        display: flex;
+                        flex-wrap: wrap;
+                        border-bottom: 1px solid #EBEBEB;
+                        &:after{
+                            display: block;
+                            content: '';
+                            background-color: #EBEBEB;
+                            width: 1px;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 50%;
+                            margin-left: -0.5px;
+                        }
+                        .menu-item-2dept{
+                            width: 50%;
+                            padding-left: 1.7rem;
+                            height: 4rem;
+                            display: flex;
+                            align-items: center;
+                            border-top: 1px solid #EBEBEB;
+                        }
+                    }
+                }
+                .menu-area.on{
+                    transform: translateX(0%);
+                }
+            }
+        }
+    }
+    .navi{
+        padding:1rem 0 1rem 1.7rem;
+        .navi-list{
+            display: flex;
+            overflow: scroll;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+            .navi-item{
+                padding: 0 1rem;
+                flex-shrink: 0;
+                color: #2B2B2B;
+                height: 2.8rem;
+                font-size: 1.3rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                a{
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .icon:after{
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0.3rem;
+                    right: -0.3rem;
+                    width: 0.4rem;
+                    height: 0.4rem;
+                    border-radius: 100%;
+                    background-color: #F04040;
+                }             
+            }
+            .active{
+                background-color: #2B2B2B;
+                -webkit-border-radius: 2rem;
+                -moz-border-radius: 2rem;
+                border-radius: 2rem;
+                color: #fff;
+                min-width: 5.4rem;
+            }
+        }
+        .navi-list::-webkit-scrollbar{
+            display: none;
+        }
+    }
+    
+}

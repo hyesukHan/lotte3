@@ -1,0 +1,98 @@
+.footer{
+    position: relative;
+    background-color: #fafafa;
+    padding: 2.6rem 0 6rem ;
+    .customer-center{
+        padding: 0 1.7rem;
+        color: #54585a;
+        font-size: 1.1rem;
+        .headline{
+            font-size: 1.2rem;
+            color: #2f2f2f;
+            font-weight: bold;
+        }
+        .info{
+            margin-top: 0.5rem;
+            display: flex;
+            align-items: end;
+            justify-content: space-between;
+            .tel{
+                font-size: 2.2rem;
+                color: #ed1c24;
+                font-weight: bold;
+            }
+            .desc-area .time{
+                margin-bottom: 0.7rem;
+            }
+        }
+        .personal-inquiry{
+            margin-top: 1.4rem;
+            padding: 1.3rem 0;
+            border-top: 1px solid #e7e7e7;
+            border-bottom: 1px solid #e7e7e7;
+            text-align: center;
+            font-size: 1.2rem;
+            color: #2b2b2b;
+        }
+    }
+    .company{
+        margin-top: 1.4rem;
+        padding: 0 1.7rem;
+        .name-area{
+            display: flex;
+            align-items: center;
+            .name{
+                font-size: 1.5rem;
+                padding-right: 0.9rem;
+                font-weight: bold;
+            }
+            .btn-toggle{
+                transform: rotate(180deg);
+                width: 0.9rem;
+                height: 0.9rem;
+                margin: -0.45rem -0.45rem 0 0;
+                background: url(../images/icon/ico-arrow-down2.png) no-repeat center center /contain;
+                transition: 0.3s;
+            }
+            .btn-toggle.on{
+                transform: rotate(360deg);
+            }
+        }
+        .info-wrap{
+            font-size: 1rem;
+            color: #8f9191;
+            padding-top: 1.4rem;
+            line-height: 1.4;
+            *{
+                margin-top: 0.4rem;
+            }
+            p:first-child{
+                margin-top: 0;
+            }
+        }
+        .terms{
+            margin-top: 1.4rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 10px;
+            strong{
+                color: #ed1c24;
+                font-weight: bold;
+            }
+            .line{
+                color: #e7e7e7;
+                font-size: .9rem;
+            }
+        }
+        .copyright{
+            padding: 0 0 1rem;
+            margin-top: 1.4rem;
+            font-size: 1rem;
+            color: #999;
+        }
+    }
+    .banner{
+        width: 100%;
+    }
+}
