@@ -15,7 +15,7 @@ list(0);
 //data를 받아오는 함수
 
 function list(num){
-  fetch('/assets/data/car.json')
+  fetch('./car.json')
   .then(res => res.json())
   .then(json => {
 
