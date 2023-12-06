@@ -10,7 +10,7 @@ $('.sc-estimate .content-wrap .tab-item').click(function(e){
 
 list(0);
 function list(num){
-  fetch('../assets/data/car.json')
+  fetch('/assets/data/car.json')
   .then(res => res.json())
   .then(json => {
 
