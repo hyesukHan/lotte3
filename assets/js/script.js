@@ -15,7 +15,7 @@ list(0);
 //data를 받아오는 함수
 
 function list(num){
-  fetch('./car.json')
+  fetch('https://raw.githubusercontent.com/hyesukHan/lotte3/main/assets/data/car.json')
   .then(res => res.json())
   .then(json => {
 
