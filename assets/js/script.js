@@ -1,3 +1,5 @@
+//sc-estimate tab menu
+
 $('.sc-estimate .content-wrap .tab-item').click(function(e){
   e.preventDefault();
   $(this).addClass('on').siblings().removeClass('on');
@@ -9,6 +11,9 @@ $('.sc-estimate .content-wrap .tab-item').click(function(e){
 })
 
 list(0);
+
+//data를 받아오는 함수
+
 function list(num){
   fetch('/assets/data/car.json')
   .then(res => res.json())
@@ -27,13 +32,14 @@ function list(num){
 
     $('#carList').html(html);
 
-    let swiper = new Swiper('.sc-estimate .swiper', {
-      loop: true,
-      slidesPerView: 'auto',
-      centeredSlides: true,
-    });
+    
+  let swiper = new Swiper('.sc-estimate .swiper', {
+    loop: true,
+    slidesPerView: 'auto',
+    centeredSlides: true,
+  });
   
-  })
+})
 }
 
 let swiper1 = new Swiper(".sc-banner .swiper", {
@@ -52,6 +58,8 @@ let swiper1 = new Swiper(".sc-banner .swiper", {
   });
 
 
+//menu버튼 
+
 $('.header-top .menu-wrap .btn-menu').click(function(e){
   $('.header-top .menu-wrap .menu-area').addClass('on');
   $('body').addClass('on');
@@ -65,6 +73,8 @@ fixEl = document.querySelector('.btn-top');
 fixEl.addEventListener('click',()=>{
   window.scrollTo({top:0,behavior:"smooth"})
 })
+
+//footer 아코디언 
 
 $('.footer .btn-toggle').click(function(e){
     $(this).toggleClass('on');
