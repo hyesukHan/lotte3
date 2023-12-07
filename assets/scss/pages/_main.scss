@@ -365,7 +365,7 @@
             display: block;
             top: 50%;
             left: 50%;
-            margin: -2.4rem 0 0 -2.25rem;
+            transform : translate(-50%,-50%);
             width: 58px;
             height: 62px;
             background: url(../images/icon/ico-play02.png)no-repeat center center /contain;
